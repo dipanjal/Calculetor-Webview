@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript">
+		function reloadApplication()
+		{
+			
+			var isNetEnable=Andro.reloadActivity();
+			/*if(isNetEnable)
+			{
+				window.location="index.html";	
+			}*/
+		}
+	</script>
+</head>
+
+<style type="text/css">
+.error-template {padding: 40px 15px;text-align: center;}
+.error-actions {margin-top:15px;margin-bottom:15px;}
+.error-actions .btn { margin-right:10px; }
+</style>
+
+<body>
+	<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="error-template">
+                <h1>Oops!</h1>
+                <h2><font color="red">No Internet Connection</font></h2>
+                <input type="button" value="Toast" onclick="reloadApplication()">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
